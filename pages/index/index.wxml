@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="usermotto">
+    <input bindinput="inputMethod" value="hello"/>
+    <text class="user-motto">{{motto}}</text>
+    <button class="button1" size="default" type="primary" bindtap="buttonClick">点我</button>
+    <button size="default" type="primary" bindtap="buttonScan">扫码</button>
+</view>
+
+</view>
