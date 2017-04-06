@@ -5,7 +5,7 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
-    inputText:motto,
+    inputText:''
   },
 
   //事件处理函数
@@ -28,6 +28,9 @@ Page({
   },
 
   buttonClick:function(e){
+    if(this.data.inputText==''){
+      this.data.inputText='hello2'
+    }
     this.setData({
       motto:this.data.inputText
     }),
