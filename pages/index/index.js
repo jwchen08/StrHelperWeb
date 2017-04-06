@@ -33,9 +33,11 @@ Page({
     }
     this.setData({
       motto:this.data.inputText
-    }),
+    })
+    var str='成功'
+    str+=this.data.inputText
     wx.showToast({
-  title: '成功',
+  title: str,
   icon: 'success',
   duration: 2000
 })
